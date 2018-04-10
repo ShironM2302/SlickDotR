@@ -1,0 +1,15 @@
+{
+  "name": "slickdotr",
+  "version": "1.0.0",
+  "description": "SlickDotR Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shiron",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
