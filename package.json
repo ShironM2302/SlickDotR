@@ -2,7 +2,7 @@
   "name": "slickdotr",
   "version": "1.0.0",
   "description": "SlickDotR Website",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,9 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
   }
 }

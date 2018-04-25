@@ -2,15 +2,98 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
     <title>Slick Dot R</title>
+    <!-- my style -->
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+    
   </head>
   <body>
 
-    <div class="homepage">
+    <!-- header -->
+    <header class="nav" id="js-menu">
+        <div class="menu" data-menu="1">
+    </header>
+    <!-- Homepage -->
+    <section class="homepage">
+      <img class="homepage-title" src="/images/slickdotr.png" alt="title">
+      <div class="homepage-logo-box">
+        <img class="homepage-logo-img" src="/images/spotify.png" alt="">
+        <img class="homepage-logo-img" src="/images/apple.png" alt="">
+        <img class="homepage-logo-img" src="/images/soundcloud.png" alt="">
+      </div>
+    </section>
+    
+    <!-- latest -->
 
-    </div>
+    <section class="latest">
+      <h2 class="sub-title latest-title"> <span class="title-line latest-title-line">LATEST</span></h2>
+      <p class="latest-text">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et"</p>
+      <div class="latest-videoWrapper">
+       
+          <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    
+    <!-- music -->
 
+    <section class="music">
+        <h2 class="sub-title music-title"> <span class="title-line music-title-line">MUSIC</span></h2>
+      <div class="music-wrapper">
+          <iframe src="https://open.spotify.com/embed?uri=spotify:album:4yKFrrDrX7ctjRxgcLZbD9" width="100%" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="music-gallery">
+        <div class="music-gallery-box"></div>
+        <div class="music-gallery-box"></div>
+        <div class="music-gallery-box"></div>
+      </div>
 
   
-  </body>
+
+    </section>
+    
+    <!-- video gallery -->
+    <section class="video">
+        <h2 class="sub-title video-title"> <span class="title-line video-title-line">VIDEOS</span></h2>
+    </section>
+    
+    <!-- events -->
+    <section class="events">
+        <h2 class="sub-title events-title"> <span class="title-line events-title-line">EVENTS</span></h2>
+        <a href="https://www.songkick.com/artists/9127709" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent">SlickdotR tour dates</a>
+
+<script src="//widget.songkick.com/9127709/widget.js"></script>
+    </section>
+
+    <!-- bio -->
+    <section class="bio">
+      <div class="bio-img"></div>
+      <div class="bio-box">
+        <p class="bio-box-text"><q>Would you believe in what you believe in if you were the only one who believed it?</p>
+      </div>
+      <!-- <img src="/images/ash2.jpg" alt="" class="bio-img"> -->
+    </section>
+
+
+
+
+
+    
+
+    
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

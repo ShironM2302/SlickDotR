@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* .homepage-stream-block{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 10rem;
+
+}
+
+.ghost-button-streaming-icon-spotify {
+    background-clip: text;
+    background: linear-gradient(45deg, #17d95e, #1dd760);
+    border: 0.3rem solid transparent;
+    border-image: linear-gradient(45deg, #17d95e, #1dd760);
+    border-image-slice: 1;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.ghost-button-streaming-icon-apple {
+    background-clip: text;
+    background: linear-gradient(45deg, #dbdcde, #c1c2c4);
+    border: 0.3rem solid transparent;
+    border-image: linear-gradient(45deg, #dbdcde, #c1c2c4);
+    border-image-slice: 1;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.ghost-button-streaming-icon-soundcloud {
+    background-clip: text;
+    background: linear-gradient(45deg, #ff3f00, #ff6a00);
+    border: 0.3rem solid transparent;
+    border-image: linear-gradient(45deg, #ff3f00, #ff6a00);
+    border-image-slice: 1;
+    color: transparent;
+    -webkit-background-clip: text;
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+html {
+    background: #070c15;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* reusable */
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.ghost-button {
+    display: block;
+    width: 18rem;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.sub-title{
+    color:white;
+    text-align: center;
+    z-index: 5;
+    padding-top: 5vh;
+    font-size: 2rem;
+    position: relative;
+}
+
+.sub-title:before {
+    border-top: 2px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 70%;
+    left: 0;
+    right: 0;
+    width: 85%;
+    z-index: -1;
+}
+.title-line{
+    background: #070c15;
+    padding: 0 5px;
+}
+/* end of reusable */
+
+/* header */
+
+.nav{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    
+    /* height: 50px; */
+}
+    .menu{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s;
+        background-color: #e3e3e3;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu:before{
+        content: "";
+        position: absolute;
+        transition: all 0.3s;
+        background-color: #212121;
+        height: 4px;
+        width: 30px;
+        top: 50%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: -6px;
+    }
+
+    .menu:after{
+        content: "";
+        position: absolute;
+        transition: all 0.3s;
+        background-color: #212121;
+        height: 4px;
+        width: 30px;
+        top: 50%;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: 4px;
+    }
+    .menu:hover{
+        background-color: orange;
+    }
+
+/* homepage */
+.homepage{
+
+    background: url("/images/ash1.JPG");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 50% 50%; 
+
+    filter: contrast(1.1);
+}
+
+.homepage-title{
+    width: 100%;
+    /* filter:drop-shadow(8px 8px 10px gray); */
+    filter:opacity(70%);
+    position: absolute;
+    z-index: 2;
+    top: 2vh;
+}
+
+
+.homepage-logo-box{
+    height: 100vh;
+    width:15%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepage-logo-img{
+    width: 100%;
+    filter:opacity(70%);
+    margin-top: 5vh;
+
+}
+
+/* Latest */
+
+.latest-videoWrapper{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.latest-text{
+    background: linear-gradient(to right, #67463e 0%, #9c8375 21%, #d29b6b 74%, #50390d 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+    text-transform: uppercase;
+    
+}
+
+.latest-videoWrapper iframe{
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/* music */
+
+.music-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10vh;
+}
+
+.music-wrapper iframe{
+
+}
+
+/* bio */
+
+.bio{
+    overflow: hidden;
+}
+.bio-img{
+    background: url("/images/ash2.jpg");
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+width: 100%;
+height: 80%;
+background-position: 50% 50%;
+background-size: contain;
+position: absolute;
+top: -120px;
+filter: opacity(70%);
+
+}
+
+.bio-box{
+    width: 100%;
+    position: absolute;
+    bottom: 10vh;
+}
+
+.bio-box-text{
+    background: linear-gradient(to right, #67463e 0%, #9c8375 21%, #d29b6b 74%, #50390d 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    padding: 3vh;
+}
+
+.bio-box-text:before{
+    content: "";
+    position: absolute;
+    left: 33vw;
+    top: 0;
+    width: 30vw;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #67463e 0%, #9c8375 21%, #d29b6b 74%, #50390d 100%);
+    border-image-slice: 1;
+}
+.bio-box-text:after{
+    content: "";
+    position: absolute;
+    left: 33vw;
+    bottom: 0;
+    width: 30vw;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #67463e 0%, #9c8375 21%, #d29b6b 74%, #50390d 100%);
+    border-image-slice: 1;
+}
+
+
+
+

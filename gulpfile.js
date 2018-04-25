@@ -1,9 +1,13 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
 
-gulp.task('sync', function() {
- browserSync.init({
- proxy: "my_project.dev",
- files: "*.css,*.php,css/*css,*.html"
-});
+
+var gulp = require('gulp'),
+    browserSync = require('browser-sync');
+
+gulp.task('browser-sync', function () {
+ browserSync.init(null, {
+    files: ["*.css", "*.js", "index.html"],
+  server: {
+     directory: true // or index: "index.html"
+  }
+ });
 });
