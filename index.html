@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
@@ -9,6 +9,8 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
     
@@ -19,6 +21,30 @@
     <header class="nav" id="js-menu">
         <div class="menu" data-menu="1">
     </header>
+
+    <div class="overlay-nav">
+      <div class="overlay-nav-titles">
+        <ul class="nav-mobile-list">
+          <li class="nav-list-item">home.</li>
+          <li class="nav-list-item">latest.</li>
+          <li class="nav-list-item">music.</li>
+          <li class="nav-list-item">videos.</li>
+          <li class="nav-list-item">events.</li>
+          <li class="nav-list-item">bio.</li>
+          <li class="nav-list-item nav-list-item-hidden">shop.</li>
+        </ul>
+      </div>
+      
+      <div class="overlay-nav-social">
+        <ul class="social-media-row">
+          <li class="social-list-item"><i class="fab fa-facebook-f"></i></li>
+          <li class="social-list-item"><i class="fab fa-twitter"></i></li>
+          <li class="social-list-item"><i class="fab fa-youtube"></i></li>
+          <li class="social-list-item"><i class="fab fa-instagram"></i></li>
+          <li class="social-list-item"><i class="far fa-envelope"></i></li>
+        </ul>
+      </div>
+    </div>
     <!-- Homepage -->
     <section class="homepage">
       <img class="homepage-title" src="/images/slickdotr.png" alt="title">
@@ -26,33 +52,44 @@
         <img class="homepage-logo-img" src="/images/spotify.png" alt="">
         <img class="homepage-logo-img" src="/images/apple.png" alt="">
         <img class="homepage-logo-img" src="/images/soundcloud.png" alt="">
+        <img class="homepage-logo-img" src="/images/deezer.png" alt="">
+        <img class="homepage-logo-img" src="/images/play.png" alt="">
+      </div>
+      <div class="homepage-scroll-container">
+        <a class="scroll-button" href="#latest"><span class="scroll-line"></span><span class="scroll-line"></span><span class="scroll-line"></span></a>
       </div>
     </section>
     
     <!-- latest -->
 
-    <section class="latest">
+    <section class="latest" id="latest">
       <h2 class="sub-title latest-title"> <span class="title-line latest-title-line">LATEST</span></h2>
-      <p class="latest-text">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et"</p>
-      <div class="latest-videoWrapper">
-       
-          <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allowfullscreen></iframe>
-      </div>
+      <div class="container">
+
+
+        <p class="latest-text">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et"</p>
+        <div class="latest-videoWrapper">
+        
+            <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
     </section>
     
     <!-- music -->
 
     <section class="music">
         <h2 class="sub-title music-title"> <span class="title-line music-title-line">MUSIC</span></h2>
-      <div class="music-wrapper">
+    <div class="container">
+        <div class="music-wrapper">
           <iframe src="https://open.spotify.com/embed?uri=spotify:album:4yKFrrDrX7ctjRxgcLZbD9" width="100%" height="300px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="music-gallery">
-        <div class="music-gallery-box"></div>
-        <div class="music-gallery-box"></div>
-        <div class="music-gallery-box"></div>
+        <div class="music-gallery-box">
+          <img class="music-gallery-img" src="/images/sr1-album.jpg" alt="">
+        </div>
       </div>
-
+      </div>
   
 
     </section>
@@ -60,14 +97,78 @@
     <!-- video gallery -->
     <section class="video">
         <h2 class="sub-title video-title"> <span class="title-line video-title-line">VIDEOS</span></h2>
+        <div class="container">
+          <!-- <div class="video-gallery">
+            <div class="video-item"></div>
+            <div class="video-item"></div>
+            <div class="video-item"></div>
+            <div class="video-item"></div>
+          </div> -->
+
+          <div class="slider">
+
+            <div class="slider-for">
+              <div class="item">
+                <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100%" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+            
+            <div class="slider-nav">
+              <div class="item">
+                <iframe width="100px" height="100px" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100px" height="100px" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100px" height="100px" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100px" height="100px" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <div class="item">
+                <iframe width="100px" height="100px" src="https://www.youtube.com/embed/8UrFX8RfxfQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          
+          </div>
+        </div>
     </section>
     
     <!-- events -->
     <section class="events">
         <h2 class="sub-title events-title"> <span class="title-line events-title-line">EVENTS</span></h2>
-        <a href="https://www.songkick.com/artists/9127709" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent">SlickdotR tour dates</a>
+        <div class="container">
+          <div class="events-show">
+              <a href="https://www.songkick.com/artists/9127709" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent">SlickdotR tour dates</a>
 
-<script src="//widget.songkick.com/9127709/widget.js"></script>
+              <script src="//widget.songkick.com/9127709/widget.js"></script>
+          </div>
+
+          <div class="events-slideshow">
+                <div>
+                  <img class="events-img" src="/images/perform1.jpg">
+                </div>
+                <div>
+                    <img class="events-img"src="/images/perform2.jpg">
+                </div>
+             </div>
+        </div>
+
+
+
     </section>
 
     <!-- bio -->
